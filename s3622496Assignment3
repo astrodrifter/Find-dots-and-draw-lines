@@ -1,0 +1,29 @@
+#assignemt 3. Introduction to programming RMIT 2016
+
+#In this assignment, you will create a road combination finder function called showRoads(picture).
+#The ‘picture’ that is given to the function is an image with a solid white background and has an arbitrary 
+#number of black dots (pixels).
+
+#Your function must first detect black dots (pixels) on the image. An image can have zero or more.
+#Then your function must draw lines using the addLine function in JES to show all the combinations 
+#of connections that could be made for the original input picture. In each combination, the lines 
+#must not have disconnections. Each combination should be shown on a separate image 
+#(hint: create a copies of the original input image).
+
+#Finally you must print the lengths of the lines for each combination. 
+#The distance between any two points (say x1,y1 and x2,y2) can be calculated using the following formula:
+                
+#distance_between_two_points = sqrt( pow(x1-x2,2)+pow(y1-y2,2) )
+#For example, in the three example combinations shown above, the distance of the entire line can be calculated 
+#as a sum of its 3 smaller segments (d1, d2 and d3):
+#   d1 = sqrt( pow(120-134,2)+pow(196-90,2) ) 
+#      = 106.92053123698928 
+#   d2 = sqrt( pow(134-228,2)+pow(90-233,2) ) 
+#      = 171.1286066091815 
+#   d3 = sqrt( pow(228-360,2)+pow(233-149,2) ) 
+#      = 156.46085772486356
+#  total_distance = d1+d2+d3 
+#                 = 434.5099955710343
+
+#Your code must work for any number of line segments, not just for 3. I.e. the image can have any number of black 
+#dots (pixels) and you must try all combinations of lines that go through each dot. The above are only examples.
